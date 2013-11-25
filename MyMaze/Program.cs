@@ -71,7 +71,9 @@ namespace MyMaze
             Width = 8;
             Height = 8;
 
-            Maze Maze = new Maze(Width, Height);
+            // taking VMaze instead of Maze
+            //Maze Maze = new Maze(Width, Height);
+            VMaze Maze = new VMaze(Width, Height);
 
             Maze.Generat((int)StaticTools.RandomDouble(0, Width - 1), (int)StaticTools.RandomDouble(0, Height - 1));
 
